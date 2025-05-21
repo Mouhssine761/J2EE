@@ -1,4 +1,3 @@
-<!-- src/app/decisionmaking/decisionmaking.component.html -->
 <header>
   <nav class="navbar">
     <a routerLink="/" class="logo">Decidely</a>
@@ -8,7 +7,6 @@
 <main class="main-content">
   <div class="container">
 
-    <!-- Submit Argument -->
     <div class="form-container">
       <h2>Submit Your Argument</h2>
       <form class="decision-form" (ngSubmit)="submitOne()">
@@ -36,7 +34,6 @@
       </form>
     </div>
 
-    <!-- Feedback -->
     <div class="results-container">
       <h2 class="results-title">Feedback</h2>
       <div *ngIf="oneDecision" class="results-content">
@@ -57,7 +54,6 @@
       </button>
     </div>
 
-    <!-- Summary -->
     <div
       class="results-container"
       *ngIf="summaryResp"
@@ -72,6 +68,4 @@
   </div>
 </main>
 
-<footer>
-  <!-- copy your existing footer markup here -->
-</footer>
+

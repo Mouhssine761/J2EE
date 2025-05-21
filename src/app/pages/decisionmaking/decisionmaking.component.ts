@@ -1,4 +1,3 @@
-// src/app/decisionmaking/decisionmaking.component.ts
 import { CommonModule }  from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 import {Component, ViewEncapsulation} from '@angular/core';
@@ -22,7 +21,6 @@ export class DecisionmakingComponent {
   oneReq: ArgumentRequest = { speaker: '', text: '' };
   oneDecision?: Decision;
 
-  // keep every sent arg for summary
   history: ArgumentRequest[] = [];
   summaryResp?: SummaryResponse;
 
@@ -31,13 +29,11 @@ export class DecisionmakingComponent {
   submitOne() {
     if (!this.oneReq.speaker || !this.oneReq.text) return;
 
-    // record for summary later
     this.history.push({ ...this.oneReq });
 
     this.svc.evalOne(this.oneReq)
       .subscribe(dec => this.oneDecision = dec);
 
-    // clear form
     this.oneReq = { speaker: '', text: '' };
   }
 

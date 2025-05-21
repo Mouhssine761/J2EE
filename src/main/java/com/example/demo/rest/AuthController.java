@@ -1,4 +1,3 @@
-// src/main/java/com/example/demo/rest/AuthController.java
 package com.example.demo.rest;
 
 import com.example.demo.entities.User;
@@ -11,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")

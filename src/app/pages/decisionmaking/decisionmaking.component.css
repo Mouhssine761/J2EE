@@ -38,7 +38,6 @@ body {
   padding: 0;
 }
 
-/* Header and Navigation */
 header {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -68,7 +67,6 @@ header {
   gap: 0.5rem;
 }
 
-/* Main Content */
 .main-content {
   flex: 1;
   display: flex;
@@ -101,7 +99,6 @@ header {
   margin: 0 auto;
 }
 
-/* Form Container */
 .form-container {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -225,7 +222,6 @@ header {
   }
 }
 
-/* Results Container */
 .results-container {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -275,7 +271,6 @@ header {
   border: 1px solid var(--border);
 }
 
-/* Footer */
 footer {
   background-color: rgba(17, 24, 39, 0.95);
   backdrop-filter: blur(10px);
@@ -323,7 +318,6 @@ footer {
   font-size: 0.85rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .page-title {
     font-size: 2rem;
@@ -359,7 +353,6 @@ footer {
   }
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -370,7 +363,6 @@ footer {
     transform: translateY(0);
   }
 }
-/* Style the form & results headings */
 .form-container h2,
 .results-container h2 {
   font-size: 1.5rem;
@@ -379,19 +371,16 @@ footer {
   font-weight: 700;
 }
 
-/* Tighter spacing inside the feedback box */
 .results-container .results-content {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-/* Highlight the speaker/text in feedback */
 .results-container .results-content strong {
   color: var(--primary-dark);
 }
 
-/* Style the “reason” line */
 .reason {
   color: var(--error);
   font-size: 0.9rem;
@@ -399,7 +388,6 @@ footer {
   margin-top: 0.25rem;
 }
 
-/* Disabled “Get Summary” button */
 .btn:disabled {
   background: var(--border);
   cursor: not-allowed;
@@ -407,7 +395,6 @@ footer {
   opacity: 0.6;
 }
 
-/* Add a little breathing room between form and feedback */
 .form-container,
 .results-container {
   margin-bottom: 2rem;

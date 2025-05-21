@@ -9,7 +9,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @Configuration
 public class SecurityConfig {
 
-  // src/main/java/com/example/demo/config/SecurityConfig.java
   @Bean
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     http
@@ -18,7 +17,6 @@ public class SecurityConfig {
         sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
       )
       .authorizeHttpRequests(auth -> auth
-        // allow open access to auth, argument & summary
         .requestMatchers("/api/auth/**", "/api/argument", "/api/arguments/summary").permitAll()
         .anyRequest().authenticated()
       );

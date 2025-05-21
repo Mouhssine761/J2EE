@@ -1,4 +1,3 @@
-// src/app/services/argument.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -13,7 +12,6 @@ export interface Decision {
   text:        string;
   willWork:       string;
   reason?:  string;
-  // …whatever else your model has
 }
 
 export interface SummaryResponse {

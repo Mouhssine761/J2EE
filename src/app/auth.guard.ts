@@ -1,4 +1,3 @@
-// src/app/auth.guard.ts
 import { Injectable } from '@angular/core';
 import {
   CanActivate,
@@ -22,7 +21,6 @@ export class AuthGuard implements CanActivate {
     if (this.auth.isLoggedIn()) {
       return true;
     }
-    // not logged in → send them to /login, with the URL they wanted
     this.router.navigate(['/login'], {
       queryParams: { returnUrl: state.url }
     });

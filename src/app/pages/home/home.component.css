@@ -39,7 +39,6 @@ body {
   flex-direction: column;
 }
 
-/* Header and Navigation */
 header {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -168,7 +167,6 @@ header {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero-section {
   padding: 3rem 5%;
   max-width: 1400px;
@@ -239,7 +237,6 @@ header {
   box-shadow: 0 6px 16px rgba(79, 70, 229, 0.3);
 }
 
-/* Oracle Form */
 .form-container {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -467,7 +464,6 @@ header {
   color: var(--primary-dark);
 }
 
-/* Content Sections */
 .content-section {
   padding: 5rem 5%;
   max-width: 1400px;
@@ -518,7 +514,6 @@ header {
   opacity: 0.9;
 }
 
-/* About Section */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -562,7 +557,6 @@ header {
   color: var(--text-medium);
 }
 
-/* Features Section */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -600,7 +594,6 @@ header {
   font-size: 0.95rem;
 }
 
-/* Contact Section */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -656,7 +649,6 @@ header {
   margin-bottom: 1.25rem;
 }
 
-/* Footer */
 footer {
   background-color: rgba(17, 24, 39, 0.95);
   backdrop-filter: blur(10px);
@@ -704,7 +696,6 @@ footer {
   font-size: 0.85rem;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .home-content,
   .about-content,
@@ -810,7 +801,6 @@ footer {
   }
 }
 
-/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -33,11 +33,9 @@ public class ArgumentController {
 
     @PostMapping("/arguments/summary")
     public SummaryResponse summaryBatch(@RequestBody List<ArgumentRequest> reqs) {
-        // 1) evaluate each:
         List<Decision> evaluated = reqs.stream()
                 .map(r -> svc.evaluateArgument(r.getSpeaker(), r.getText()))
                 .collect(Collectors.toList());
-        // 2) summarize them:
         return svc.summarizeDecisions(evaluated);
     }
     public static class ArgumentRequest {

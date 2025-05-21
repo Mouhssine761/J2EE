@@ -14,9 +14,8 @@ public class User {
   private String username;
 
   @Column(nullable = false)
-  private String password; // hashed!
+  private String password;
 
-  // optional roles
   @ElementCollection(fetch = FetchType.EAGER)
   @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
   @Column(name = "role")
@@ -30,7 +29,7 @@ public class User {
     this.id = id;
   }
 
-  // getters & setters
+
 
   public String getUsername() {
     return username;
