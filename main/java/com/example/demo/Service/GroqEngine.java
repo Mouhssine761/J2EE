@@ -121,7 +121,7 @@ public class GroqEngine implements Engine {
                                 "role",    "system",
                                 "content", """
 You are a discussion synthesizer.  The user is showing you a numbered sequence of statements
-from a single speaker building on their own prior points.  Produce one cohesive conclusion paragraph
+from one or multiple speakers that you need to remember building on their own prior points.  Produce one cohesive conclusion paragraph
 that:
   1) Summarizes the original question
   2) Explains how each follow-up refines or challenges that question
