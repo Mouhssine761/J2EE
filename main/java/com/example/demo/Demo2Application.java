@@ -13,10 +13,6 @@ public class Demo2Application {
     public static void main(String[] args) {
         SpringApplication.run(Demo2Application.class, args);
     }
-    @GetMapping("/api/health-check")
-    public String healthCheck(){
-      return "ok";
-    }
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
